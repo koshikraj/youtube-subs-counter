@@ -1,3 +1,4 @@
 falcon==1.4.1
 requests==2.19.1
 google-api-python-client==1.6.6
+tweepy==3.6.0
