@@ -6,7 +6,7 @@ import './App.css';
 
 import CountUp from 'react-countup';
 
-const API = "http://localhost:8888/";
+const API = "http://www.topsubs.xyz:8888/";
 
 const GREEN = '#a5c955';
 
@@ -67,9 +67,9 @@ class App extends Component {
 
   render() {
     return (
-        <div className="container" style={{"display": "flex", "flex-direction": "column"}}  >
+        <div style={{"display": "flex", "flex-direction": "column"}}  >
 
-            <div style={{"text-align": "center", "margin": 50}}> <span style={{"font-family": "sans-serif", "font-size": 25}}>Follow the twitter bot to get notified when T series overtakes PewDiePie </span>
+            <div style={{"text-align": "center", "margin": 50}}> <span style={{"font-family": "sans-serif", "font-size": 25}}>Follow the <a href="https://twitter.com/rajkoshik" target="_blank">twitter bot</a> to get notified when T series overtakes PewDiePie </span>
 
              <a href="https://github.com/koshikraj/youtube-subs-counter" target="_blank">
                 <img style={{"position": "absolute", "top": 0, "right": 0, "border": 0}} src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"/>
@@ -77,7 +77,11 @@ class App extends Component {
             </div>
 
 
-            <div style={{ "display": "flex", "flex-direction":"row"}}>
+            <div style={{ "display": "flex", "flex-wrap":"wrap"}}>
+
+
+
+
 
                 <div style={{"display": "flex", "align-items": "center", "flex-direction": "column"}}>
 

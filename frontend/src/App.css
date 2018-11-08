@@ -26,7 +26,6 @@
   align-items: center;
   align-self: center;
   align-content: center;
-  position: relative;
 
 }
 
@@ -39,7 +38,6 @@
 
 .subs-counter-border {
   border-width: 3px;
-  float: left;
 
 }
 
