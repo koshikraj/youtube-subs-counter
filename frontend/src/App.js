@@ -88,12 +88,12 @@ class App extends Component {
                     <img height="100" width="100" src={this.state.tseriesCount>this.state.pewdiepieCount ? GOLD : SILVER}/>
 
                 <div style={{"display": "flex", "flex-direction":"column"
-                , "margin": "100px", "background-color": this.state.tseriesCount>this.state.pewdiepieCount ? GREEN : RED, "padding": 30}}>
+                , "margin": "60px", "background-color": this.state.tseriesCount>this.state.pewdiepieCount ? GREEN : RED, "padding": 30}}>
 
 
                 <div style={{"display": "flex", "flex-direction":"row", "align-items": "center"}}>
                 <img height="100" width="100" src={this.state.tseriesUrl}/>
-                <span>
+                <span className="channel-name">
                     T-series
                 </span>
                 </div>
@@ -113,10 +113,10 @@ class App extends Component {
                 <img height="100" width="100" src={this.state.pewdiepieCount > this.state.tseriesCount ? GOLD : SILVER}/>
 
                     <div style={{"display": "flex", "flex-direction":"column",
-                "margin": "100px", "background-color": this.state.pewdiepieCount > this.state.tseriesCount ? GREEN : RED, "padding": 30}}>
+                "margin": "60px", "background-color": this.state.pewdiepieCount > this.state.tseriesCount ? GREEN : RED, "padding": 30}}>
                 <div style={{"display": "flex", "flex-direction":"row", "align-items": "center"}}>
                 <img height="100" width="100" src={this.state.pewdiepieUrl}/>
-                <span>
+                <span className="channel-name">
                     PewDewPie
                 </span>
                 </div>

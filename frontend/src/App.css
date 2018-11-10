@@ -31,8 +31,15 @@
 
 .subs-counter {
   color: #789;
-  font-size: 15vmin;
-  font-weight: 300;
+  font-size: 10vmin;
+  font-weight: 500;
+
+}
+
+.channel-name {
+  color: #789;
+  font-size: 4vmin;
+  font-weight: 400;
 
 }
 
