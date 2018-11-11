@@ -36,6 +36,15 @@
 
 }
 
+.subs-diff {
+  color: #b3e2e5;
+  font-size: 4vmin;
+  font-weight: 600;
+  align-self: center;
+
+
+}
+
 .channel-name {
   color: #789;
   font-size: 4vmin;
@@ -45,6 +54,22 @@
 
 .subs-counter-border {
   border-width: 3px;
+
+}
+
+.subs-diff-border {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  background-color: #01315a;
+  border-radius: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-width: 10px;
+  border-color: #aaf8ff;
+  border-style: solid;
+
 
 }
 

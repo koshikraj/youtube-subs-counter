@@ -107,6 +107,26 @@ class App extends Component {
                 </div>
             </div>
 
+
+
+
+
+                   <div style={{"display": "flex",  "justify-content": "center", "flex-wrap": "wrap"}}>
+                    <div className="subs-diff-border">
+                        <span style={{"color": "#9ED6BE"}}> trail by </span>
+                        {this.state.loaded ?
+                            <CountUp start={Math.abs(this.state.lastpewdiepieCount - this.state.lasttseriesCount)} end={Math.abs(this.state.pewdiepieCount - this.state.tseriesCount)} duration={1}
+                                     className="subs-diff"/>:<div className="subs-diff"> loading... </div>
+                        }
+
+                    </div>
+                   </div>
+
+
+
+
+
+
                 <div style={{"display": "flex", "align-items": "center", "flex-direction": "column"}}>
 
 
