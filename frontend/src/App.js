@@ -24,7 +24,8 @@ class App extends Component {
             pewdiepieUrl: "",
             tseriesUrl: "",
             loaded: false,
-            winner: "pewdiepie"};
+            winner: "pewdiepie",
+            first: true};
 
 
     }
@@ -53,7 +54,7 @@ class App extends Component {
             .then(response => {
                 console.log(response);
 
-                this.setState({lastpewdiepieCount: this.state.pewdiepieCount, lasttseriesCount: this.state.tseriesCount});
+                this.setState({lastpewdiepieCount: this.state.pewdiepieCount, lasttseriesCount: this.state.tseriesCount, first: false});
                 this.setState({pewdiepieCount: response.data.pewdiepie, tseriesCount: response.data.tseries, loaded: true});
             }); }, 10000);
 
@@ -100,7 +101,7 @@ class App extends Component {
 
             <div className="subs-counter-border">
                     {this.state.loaded ?
-                   <CountUp start={this.state.lasttseriesCount} end={this.state.tseriesCount} duration={1}
+                   <CountUp start={this.state.lasttseriesCount} end={this.state.tseriesCount} duration={this.state.first? 1 : 12}
                                                  className="subs-counter"/>:<div className="subs-counter"> loading... </div>
                 }
               </div>
@@ -115,7 +116,7 @@ class App extends Component {
                     <div className="subs-diff-border">
                         <span style={{"color": "#9ED6BE"}}> trail by </span>
                         {this.state.loaded ?
-                            <CountUp start={Math.abs(this.state.lastpewdiepieCount - this.state.lasttseriesCount)} end={Math.abs(this.state.pewdiepieCount - this.state.tseriesCount)} duration={1}
+                            <CountUp start={Math.abs(this.state.lastpewdiepieCount - this.state.lasttseriesCount)} end={Math.abs(this.state.pewdiepieCount - this.state.tseriesCount)} duration={this.state.first? 1 : 12}
                                      className="subs-diff"/>:<div className="subs-diff"> loading... </div>
                         }
 
@@ -142,7 +143,7 @@ class App extends Component {
                 </div>
                 <div className="subs-counter-border">
                   {this.state.loaded ?
-                      <CountUp start={this.state.lastpewdiepieCount} end={this.state.pewdiepieCount} duration={1}
+                      <CountUp start={this.state.lastpewdiepieCount} end={this.state.pewdiepieCount} duration={this.state.first? 1 : 12}
                                className="subs-counter"/>:<div className="subs-counter"> loading... </div>
                   }
 
